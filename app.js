@@ -3,7 +3,7 @@
 // E.g. node app.js http://localhost:8080/cc.xml 4444
 
 var http    = require('http'),
-    sys     = require('sys'),
+    util    = require('util'),
     url     = require('url'),
     sax     = require('sax'),
     express = require('express'),
