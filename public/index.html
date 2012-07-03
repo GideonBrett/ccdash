@@ -12,11 +12,18 @@
   <body>
     <ul id="cc">
       <script id="projects_template" type="text/html">
-        {{#projects}}
-          <li class="{{lastBuildStatus}} {{activity}}">
-            <p>{{name}}</p>
+        {{#projects_by_category}}
+          <li>
+            <h2>{{name}}</h2>
+            <ul>
+              {{#projects}}
+                <li class="{{lastBuildStatus}} {{activity}}">
+                  <p>{{name}}</p>
+                </li>
+              {{/projects}}
+            </ul>
           </li>
-        {{/projects}}
+        {{/projects_by_category}}
       </script>
     </ul>
     <footer>

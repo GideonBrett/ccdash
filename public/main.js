@@ -61,7 +61,38 @@ $(document).ready(function(){
     setHealth(data.status == 'success');
     setStatus('client = ' + textStatus + '; server = ' + data.status);
 
-    template.render({projects: data.projects.sort(util.sortBy('lastBuildTime')).reverse()});
+    //for each project {
+    //  Check if they are listed in dashboard_config
+    //  if yes, list them in those categories 
+    //  if no, just put them at the end
+    // }
+    template.render({
+      projects: data.projects.sort(util.sortBy('lastBuildTime')).reverse(),
+      projects_by_category: [
+        {
+          name: 'Mainstream',
+          projects: [
+            {name: 'Static'},
+            {name: 'Smart Answers'},
+            {name: 'Pubisher'},
+            {name: 'Frontend'}
+          ]
+        },
+        {
+          name: 'Whitehall',
+          projects: [
+            {name: 'Static'},
+            {name: 'Whitehall'}
+          ]
+        },
+        {
+          name: 'Working',
+          project: [
+            {name: 'Router'},
+            ]
+        }
+      ]
+    });
     setTimeout(shrinkToFit, 1);
   };
 

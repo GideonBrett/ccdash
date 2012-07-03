@@ -1,0 +1,27 @@
+Input:
+
+configuration = {
+	"Mainstream" => ["Static", "Smart Answers", "Publisher", "Frontend"],
+	"Whitehall" => ["Static", "Whitehall"],
+	"Transition" => ["Router"]
+	other = EE
+}
+
+Output:
+
+*Mainstream
+(Static) (Smart Answers) (Publisher) (Frontend)
+
+*Whitehall* 
+(Static) (Whitehall)
+
+*Transition*
+(Router)
+
+*Other*
+(a) (b) (c)
+
+Idea: Add categories to ccdash without actually touching the XML file
+
+Categories added, now to add the projects under these lists and get them to update dynamically 
+	(Transitions has listed all of them, and updates them correctly... for some reason)

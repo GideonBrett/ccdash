@@ -1,0 +1,121 @@
+name: "API Adapters"
+
+name: "Calendars"
+
+name: "CDN"
+
+name: "Clear Preview Varnish Cache"
+
+name: "Contact-o-tron"
+
+name: "datainsight"
+
+name: "DeployErtp"
+
+name: "DeployLicensify"
+
+name: "Deployment"
+
+name: "DeployPlaces"
+
+name: "Design Principles"
+
+name: "EFG"
+
+name: "ERTP"
+
+name: "FCO-Travel"
+
+name: "Frontend"
+
+name: "gds-provisioner"
+
+name: "gds-scala-common"
+
+name: "GDS-SSO"
+
+name: "GdsWarmupController"
+
+name: "Geogov"
+
+name: "Govspeak"
+
+name: "govuk content models"
+
+name: "Imminence"
+
+name: "Jobs"
+
+name: "Licence Finder"
+
+name: "Licensify"
+
+name: "Migratorator"
+
+name: "Need-o-tron"
+
+name: "omniauth-gds"
+
+name: "OPG"
+
+name: "Page of Last Resort"
+
+name: "Panopticon"
+
+name: "Places"
+
+name: "Planner"
+
+name: "plek"
+
+name: "Preview Deploy"
+
+name: "private-utils"
+
+name: "Production Deploy"
+
+name: "Publisher"
+
+name: "puppet"
+
+name: "puppet-branch-infrastructure"
+
+name: "Purge Cache Items"
+
+name: "Rack-geo"
+
+name: "Rebuild Error Pages"
+
+name: "Rebuild Preview Data"
+
+name: "recommended-links"
+
+name: "Review-o-matic"
+
+name: "Router"
+
+name: "Router Deploy"
+
+name: "rummageable"
+
+name: "Rummager"
+
+name: "signonotron2"
+
+name: "Slimmer"
+
+name: "Smart Answers"
+
+name: "Smokey Preview"
+
+name: "Smokey Production"
+
+name: "Static"
+
+name: "TariffWebApp"
+
+name: "UKTradeTariff"
+
+name: "Up"
+
+name: "Whitehall"
