@@ -1,6 +1,14 @@
 $(document).ready(function(){
 
-  var Template = function(name){
+
+  function whichCategory(project) {
+    var configuration = {
+      "Mainstream": ["Static", "Smart Answers", "Publisher", "Frontend"],
+      "Whitehall": ["Static", "Whitehall"],
+      "Transition": ["Router"],
+    }
+  }
+  var Template = function(name){ 
     var script = $('#' + name);
     this.template = script.html();
     this.container = script.parent();
@@ -61,32 +69,33 @@ $(document).ready(function(){
     setHealth(data.status == 'success');
     setStatus('client = ' + textStatus + '; server = ' + data.status);
 
-    //for each project {
-    //  Check if they are listed in dashboard_config
-    //  if yes, list them in those categories 
-    //  if no, just put them at the end
-    // }
+    // var projects_by_category = {};
+    // data.projects.forEach(function(project) { 
+    //   var projectCategory = whichCategory(project.name);
+    //   projects_by_category[projectCategory].push(project);
+    // });
+
     template.render({
       projects: data.projects.sort(util.sortBy('lastBuildTime')).reverse(),
       projects_by_category: [
+        // {
+        //    name: 'Mainstream',
+        //    projects: [
+        //      {name: 'Static'},
+        //      {name: 'Smart Answers'},
+        //      {name: 'Pubisher'},
+        //      {name: 'Frontend'}
+        //    ]
+        //  },
+        //  {
+        //    name: 'Whitehall',
+        //    projects: [
+        //      {name: 'Static'},
+        //      {name: 'Whitehall'}
+        //    ]
+        //  },
         {
-          name: 'Mainstream',
-          projects: [
-            {name: 'Static'},
-            {name: 'Smart Answers'},
-            {name: 'Pubisher'},
-            {name: 'Frontend'}
-          ]
-        },
-        {
-          name: 'Whitehall',
-          projects: [
-            {name: 'Static'},
-            {name: 'Whitehall'}
-          ]
-        },
-        {
-          name: 'Working',
+          name: 'Project List',
           project: [
             {name: 'Router'},
             ]

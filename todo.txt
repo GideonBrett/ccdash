@@ -1,11 +1,17 @@
 Input:
 
 configuration = {
-	"Mainstream" => ["Static", "Smart Answers", "Publisher", "Frontend"],
-	"Whitehall" => ["Static", "Whitehall"],
-	"Transition" => ["Router"]
+	"Mainstream": ["Static", "Smart Answers", "Publisher", "Frontend"],
+	"Whitehall": ["Static", "Whitehall"],
+	"Transition": ["Router"]
 	other = EE
 }
+
+    // for each project {
+    //  Check if they are listed in dashboard_config
+    //  if yes, list them in those categories 
+    //  if no, just put them at the end
+    // }
 
 Output:
 
@@ -24,4 +30,5 @@ Output:
 Idea: Add categories to ccdash without actually touching the XML file
 
 Categories added, now to add the projects under these lists and get them to update dynamically 
-	(Transitions has listed all of them, and updates them correctly... for some reason)
+1) figure out how to read JSON data from JS
+2) use the JSON data to get data into categories
